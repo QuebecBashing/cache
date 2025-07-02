@@ -1,0 +1,20 @@
+name:  cache workflow_run
+on:
+  workflow_run:
+    workflows: [trigger]
+    types:
+      - completed
+       
+permissions: {}
+
+jobs:
+  one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{github.event.workflow_run.head_sha}}
+      - uses: actions/setup-node@v4
+        with:
+          cache: npm
