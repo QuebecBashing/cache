@@ -1,0 +1,12 @@
+name:  trigger
+on:
+  pull_request:
+       
+permissions: {}
+
+jobs:
+  one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sleep
+        run: sleep 1s
