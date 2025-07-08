@@ -1,0 +1,17 @@
+name:  cache pull_request_target
+on:
+  pull_request_target:
+
+permissions: {}
+
+jobs:
+  one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{github.event.pull_request.head.sha}}
+      - uses: actions/setup-node@v4
+        with:
+          cache: npm
