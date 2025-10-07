@@ -1,0 +1,8 @@
+{
+	"name": "my-local-package",
+	"version": "1.0.0",
+	"description": "A local package example",
+	"main": "index.js",
+	"author": "",
+	"license": "ISC"
+}
