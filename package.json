@@ -1,6 +1,5 @@
 {
 	"name": "tmp.ppagewyq4t",
-	"packageManager": "^npm@10",
 	"version": "1.0.0",
 	"description": "",
 	"license": "ISC",
@@ -12,6 +11,7 @@
 		"run": "node index.js"
 	},
 	"dependencies": {
-		"my-local-package": "file:./local_package"
+		"my-local-package": "file:./local_package",
+		"axios": "^1.6.7"
 	}
 }
