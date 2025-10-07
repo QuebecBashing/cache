@@ -1,6 +1,6 @@
 {
 	"name": "tmp.ppagewyq4t",
-	"packageManager": "npm",
+	"packageManager": "^npm@10.8.2",
 	"version": "1.0.0",
 	"description": "",
 	"license": "ISC",
